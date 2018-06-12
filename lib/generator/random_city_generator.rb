@@ -14,7 +14,7 @@ class RandomGenerator
   # end
 
   def get_yaml_data
-    @city_ids = YAML.load_file('/services/city_id.yml')
+    @city_ids = YAML.load_file('city_id.yml')
   end
 
   # def generate_random_city
