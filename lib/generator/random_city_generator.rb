@@ -9,12 +9,14 @@ class RandomGenerator
 
 #MAke a method in here that generate a random city name and then call that method in the test
 
-  # def initialize
-  #   @city_ids = YAML.load_file('/services/city_id.yml')
-  # end
-
+# Grab all the city IDs from the YAML file. It's a giant array!
   def get_yaml_data
-    @city_ids = YAML.load_file('city_id.yml')
+    @city_ids = YAML.load_file('../../city_id.yml')
+  end
+
+  def generate_random_city
+    @city_ids = YAML.load_file('../../city_id.yml')
+    @city_ids.sample
   end
 
   # def generate_random_city
@@ -28,5 +30,5 @@ class RandomGenerator
 end #end of class
 
 response = RandomGenerator.new
-puts response.get_yaml_data
+p response.generate_random_city
 #Randomly generate a number from the YAML file. So make a method that weill do this.
