@@ -10,7 +10,9 @@ describe Weather do
         @city_weather.generate_random_city
       end
 
-
+    it "should return all the weather information in a hash" do
+      expect(@city_weather.get_city_weather(random_city_id)).to be_a(Hash)
+    end
 
 
 
