@@ -16,7 +16,8 @@ class ListOfCitiesService
     JSON.parse(self.class.get("https://api.openweathermap.org/data/2.5/weather?id=#{city_id}&APPID=41a4b369873fcaf6d5e69dc2f5a22e38").body)
   end
 
-  
+
+
 end
 
 city = ListOfCitiesService.new
