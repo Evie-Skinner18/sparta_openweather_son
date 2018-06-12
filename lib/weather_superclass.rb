@@ -20,7 +20,8 @@ class Weather
 end
 #now we know our individual services will work through the super class
 
-# p service =
-# Postcodesio.new.single_postcode_service.get_single_postcode("GL55BP")
-p service =
-Weather.new.list_of_cities.get_weather
+service = Weather.new
+
+p random_city_id = service.random_city_generator.generate_random_city
+
+p service.list_of_cities.get_city_weather(random_city_id)

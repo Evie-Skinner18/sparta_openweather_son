@@ -11,24 +11,21 @@ class RandomGenerator
 
 # Grab all the city IDs from the YAML file. It's a giant array!
   def get_yaml_data
-    @city_ids = YAML.load_file('../../city_id.yml')
+#The file path is relative to where it's being called from (i.e the weather super class not here where it's being created)
+    @city_ids = YAML.load_file('city_id.yml')
   end
 
+#.sample genenrates a random item from a given array
   def generate_random_city
-    @city_ids = YAML.load_file('../../city_id.yml')
+    @city_ids = YAML.load_file('city_id.yml')
     @city_ids.sample
   end
 
-  # def generate_random_city
-  #   YAML.load_file('../services/city_id.yml')
-  #
-  # end
 
-  # def get_response_code
-  #   @single_random_postcode_data["status"]
-  # end
+
+
 end #end of class
 
 response = RandomGenerator.new
-p response.generate_random_city
+# p response.generate_random_city
 #Randomly generate a number from the YAML file. So make a method that weill do this.

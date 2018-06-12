@@ -21,7 +21,7 @@ class ListOfCitiesService
 end
 
 city = ListOfCitiesService.new
-puts city.get_city_weather("2172797")
+# puts city.get_city_weather("2172797")
 
 # response = ListOfCitiesService.new
 # p response.get_city_weather("Berlin")
