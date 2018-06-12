@@ -19,9 +19,3 @@ class Weather
 
 end
 #now we know our individual services will work through the super class
-
-# service = Weather.new
-
-# p random_city_id = service.random_city_generator.generate_random_city
-
-# p service.list_of_cities.get_city_weather(random_city_id)
