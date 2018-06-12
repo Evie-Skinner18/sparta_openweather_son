@@ -21,10 +21,8 @@ class RandomGenerator
   # def get_response_code
   #   @single_random_postcode_data["status"]
   # end
-
-
-
 end #end of class
-random_city = RandomGenerator.new
-p random_city.generate_random_city
+
+response = RandomGenerator.new
+p response
 #Randomly generate a number from the YAML file. So make a method that weill do this.
