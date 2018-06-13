@@ -5,12 +5,7 @@ describe Weather do
   context 'requesting weather information on a single city works correctly by testing get_weather' do
 
     before do
-        #create an instance of the city
-        # @city_weather = Weather.new.random_city_generator
-        # @city_id = @city_weather.generate_random_city
-        #
-        # @results = Weather.new.list_of_cities
-
+    
         # 1 step. Setup fixture
         weather = Weather.new
         list_of_cities = weather.list_of_cities
@@ -21,10 +16,6 @@ describe Weather do
 
       end
 
-    # it "should return all the weather information in a hash" do
-    #   expect(@results.get_city_weather(@city_id)).to be_a(Hash)
-    #   p   @city_id = @city_weather.generate_random_city
-    # end
 
     it "should return a string of two letters containing an abbreviation of the given country" do
       country = @city_weather["sys"]["country"]
@@ -61,7 +52,7 @@ context "Testing the method get_city_weather" do
       expect(weather_info["id"]).to be_a(Integer)
     end
 
-    
+
 
 
 
