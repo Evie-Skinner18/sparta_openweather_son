@@ -61,9 +61,7 @@ context "Testing the method get_city_weather" do
       expect(weather_info["id"]).to be_a(Integer)
     end
 
-    it "should" do
-
-    end
+    
 
 
 
