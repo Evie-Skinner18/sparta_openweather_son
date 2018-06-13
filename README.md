@@ -3,7 +3,11 @@ Making a service object model to test the Open Weather API. This project has use
 
 - A super class
 - A random city generator
-- A smaller class
+- Two smaller classes:
+  - one which accesses the API and parses the data through JSON into a Ruby hash
+  - one which generates the ID of a random city in the YAML file of cities.
+- The methods contained in the test specification combine the methods in these smaller classes together to test the weather information that matches the given city ID.
+- I used more local variables than instance variables in the test specification in order to improve the performance of the tests (since they are 'lighter' than other variable types).
 
 ## Service - (Current Weather - By City Name)
 
